@@ -132,6 +132,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\data\convertcsv.sql.txt" />
     <Content Include="Content\data\zoo.data.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -151,6 +152,8 @@
     <Content Include="Content\data\weather-sample.xlsx" />
     <Content Include="Content\data\flight-sample.csv" />
     <Content Include="Content\data\weather-sample.csv" />
+    <Content Include="Content\data\zoo.data.csv" />
+    <Content Include="Content\data\zoo.data" />
     <None Include="Properties\PublishProfiles\MLTrainWeb.pubxml" />
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
