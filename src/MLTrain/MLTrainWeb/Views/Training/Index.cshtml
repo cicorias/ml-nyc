@@ -7,26 +7,67 @@
 <div class="row">
     <div class="col-md-12">
         <div class="row">
+            <h4>GitHub Repo</h4>
+            <p><a href="https://github.com/cicorias/ml-nyc">https://github.com/cicorias/ml-nyc</a></p>
+        </div>
+        <div class="row">
             <h4>Ex. Block 1</h4>
             <p>Link for Azure Blob with SAS - "copy to clipboard"</p>
             <a href="https://scicoriagfun.blob.core.windows.net/mlnyc/zoo.data.txt?sv=2014-02-14&sr=b&si=nyc&sig=Vx5KEDJSZmrXEzRwqDju%2BXMB2rtSBwunPjDunckSUrs%3D">https://scicoriagfun.blob.core.windows.net/mlnyc/zoo.data.txt?sv=2014-02-14&sr=b&si=nyc&sig=Vx5KEDJSZmrXEzRwqDju%2BXMB2rtSBwunPjDunckSUrs%3D</a>
         </div>
         <div class="row">
-            <p>Zoo Data Set</p>
-            <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/zoo/">Source</a>
-            <br />
-            <a href="~/Content/data/zoo.data.txt">Copy</a>
+            <h4>Zoo Data Set</h4>
+            <p>Zoo Data (uci.edu):<a href="https://archive.ics.uci.edu/ml/machine-learning-databases/zoo/">Source</a></p>
+            <p>Zoo Data (copy): <a href="~/Content/data/zoo.data.txt">Copy</a></p>
+            <p>Completed Experiment:<a href="http://gallery.azureml.net/Details/6879393cc58547a9bd43617288ec5146">Gallery Version</a></p>
+            
         </div>
         <div class="row">
             <h4>Ex. Block 2</h4>
-            <p>Flight Delay Study</p>
-            <a href="http://cs229.stanford.edu/proj2012/CastilloLawson-PredictingFlightDelays.pdf">http://cs229.stanford.edu/proj2012/CastilloLawson-PredictingFlightDelays.pdf</a>
-            <p>BTS Data</p>
-            <a href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236>">http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236</a>
-            <p>XLS Prepped File - 2013</p>
-            <a href="~/Content/data/flight-sample.xlsx">flight-sample.xlsx</a>
-            <p>NOAA Weather Sample 2013</p>
-            <a href="~/Content/data/weather-sample.xlsx">weather-sample.xlsx</a>
+            <p>
+                Flight Delay Study
+                <a href="http://cs229.stanford.edu/proj2012/CastilloLawson-PredictingFlightDelays.pdf">http://cs229.stanford.edu/proj2012/CastilloLawson-PredictingFlightDelays.pdf</a>
+            </p>
+            <p>BTS Data
+            <a href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236>">http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236</a></p>
+            <p>XLS Prepped File - 2013
+            <a href="~/Content/data/flight-sample.xlsx">flight-sample.xlsx</a></p>
+            <p>
+                CSV Prepped File - 2013
+                <a href="~/Content/data/flight-sample.csv">flight-sample.csv</a>
+            </p>
+            <p>NOAA Weather Sample 2013 - XLSX
+            <a href="~/Content/data/weather-sample.xlsx">weather-sample.xlsx</a></p>
+            <p>
+                NOAA Weather Sample 2013 - CSV
+                <a href="~/Content/data/weather-sample.csv">weather-sample.csv</a>
+            </p>
+            <p>Completed in gallery<a href="http://gallery.azureml.net/Details/8dfd9ee5c6be41a8b6add92e5b185f35">http://gallery.azureml.net/Details/8dfd9ee5c6be41a8b6add92e5b185f35</a></p>
+        </div>
+
+
+
+        <div class="row">
+            <h4>Excercise Block 3</h4>
+            <p>R script</p>
+            <pre>
+# Connect Adult… dataset - visible as data.frame
+ds1 <- maml.mapinputport(1)
+library(ggplot2)
+# clean up unfortunate variable names (r does not like ‘-’ in variable names)
+names(ds1) <- sub(pattern='-', replacement='.', x=names(ds1))
+
+# Plot some variable distributions by income
+qplot(x=sex, data=ds1, geom="histogram", fill=income, position="dodge")
+qplot(x=relationship, data=ds1, geom="histogram", fill=income, position="dodge")
+qplot(x=age, data=ds1, geom="density", alpha=0.5, fill=income)
+qplot(x=education.num, data=ds1, geom="density", alpha=0.5, fill=income)
+</pre>
+            <p>Completed in Gallery<a href="http://gallery.azureml.net/Details/b4c4e0b3f14d415a9c7095255a344f3f">http://gallery.azureml.net/Details/b4c4e0b3f14d415a9c7095255a344f3f</a></p>
+        </div>
+        <div class="row">
+            <h4>Gallery Experiments</h4>
+            <p>Using tag: <a href="http://gallery.azureml.net/browse?s=mlnyc">Tag=mlnyc</a></p>
         </div>
     </div>
 

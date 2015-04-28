@@ -149,6 +149,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\data\flight-sample.xlsx" />
     <Content Include="Content\data\weather-sample.xlsx" />
+    <Content Include="Content\data\flight-sample.csv" />
+    <Content Include="Content\data\weather-sample.csv" />
     <None Include="Properties\PublishProfiles\MLTrainWeb.pubxml" />
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
